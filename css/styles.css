@@ -216,49 +216,67 @@ body {
     font-size: 1.2em;
 }
 
-/* -------------  Intersección 1  --------------- */
+/* -------------  Intersección 1  ------------- */
 
-.intersection-1 {
+.intersection-c {
     display: grid;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
+    /* grid-row-gap: 30px; */
     font-family: var(--fuente-rotulos);
     font-size: 3.5em;
     background-image: url("../images/arrow_3.svg");
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: contain; */
+    background-size:auto;
 }
-.intersection-1__lightbulb,
-.intersection-1__rocket {
+.intersection-one__lightbulb,
+.intersection-one__rocket {
     width: 2em;
     filter: drop-shadow(0px 1px 5px var(--color-sombra));
 }
-.intersection-1__lightbulb {
+.intersection-one__lightbulb {
     margin-left: 70px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
-.intersection-1__rocket {
+.intersection-one__rocket {
     justify-self: end;
     margin-right: 50px;
 }
-.intersection-1__p1 {
+.intersection-one__p1 {
     transform: rotate(-7deg);
-    margin-top: 5px;
-    margin-bottom: 45px;
+    /* margin-top: 5px;
+    margin-bottom: 45px; */
 }
-.intersection-1__p2 {
+.intersection-one__p2 {
     transform: rotate(2deg);
-    margin-top: 5px;
+    /* margin-top: 5px; */
     /*     margin-bottom: 45px; */
     text-align: right;
 }
 
+/* -------------  Sección stack  -------------- */
 
-
+.container-stack__slider {
+    display: grid;
+    width: min-content;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+}
+.slider-ico {
+    width: 80px;
+    filter: grayscale(1);
+    opacity: .5;
+}
+.slider-ico:hover {
+    filter: grayscale(0);
+}
+.slider-ico:active {
+    filter: opacity(1);
+}
 
 
 
